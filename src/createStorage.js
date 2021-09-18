@@ -9,7 +9,7 @@ const createStorage = (provider) => ({
       : JSON.parse(json);
   },
   set(key, value) {
-    provider.setItem(key, JSON.stringify(value));
+    provider.setItem(key, value);
   },
 });
 
